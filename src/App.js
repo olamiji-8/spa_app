@@ -1,10 +1,8 @@
-import React from 'react'
+import {BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Packages from './components/packages';
 
-import {BrowserRouter as Router, Link, Route } from 'react-router-dom';
-import Home from './component/Home';
-import About from './component/About';
-import Packages from './component/Packages';
-import './App.css';
 
 
 
@@ -33,15 +31,17 @@ function App () {
           </div>
         </header>
         <div >
+        <Routes>
           <Route path='/' component ={Home}/>
           <Route path='/about' component ={About}/>
           <Route path='/packages' render ={() => <Packages packages ={packages}/>}/>
-        </div>
-      </Router>
+          </Routes>
+          
+          </div>
+          </Router>
       </div>
    
   )
 }
 
 export default App;
-
