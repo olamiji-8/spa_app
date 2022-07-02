@@ -9,12 +9,9 @@ export default function About() {
         </div>
         <p>
         Mineral spas ae spa resorts developed around naturally occuring mineral springs.
-            Like seaside resorts, they are mainly used recreationally although they also figured in prescientific medicine. </p>
+            Like seaside resorts, they are mainly used recreationally although they also figured in prescientific medicine.
+       </p>
          <img src="hotsprings.jpg"alt="hotsprings"/>
-        
-       
-    
-    
-    </div>
+        </div>
   )
 }

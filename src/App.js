@@ -2,6 +2,7 @@ import {BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
 import Packages from './components/packages';
+import './index.css'
 
 
 
@@ -30,11 +31,12 @@ function App () {
             </div>
           </div>
         </header>
+        
         <div >
         <Routes>
-          <Route path='/' component ={Home}/>
-          <Route path='/about' component ={About}/>
-          <Route path='/packages' render ={() => <Packages packages ={packages}/>}/>
+          <Route path='/' element ={<Home/>}/>
+          <Route path='/about' element ={<About/>}/>
+          <Route path='/packages' element ={() => <Packages packages = {packages}/>}/>
           </Routes>
           
           </div>
